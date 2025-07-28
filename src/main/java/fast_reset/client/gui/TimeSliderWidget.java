@@ -10,7 +10,7 @@ public class TimeSliderWidget extends SliderWidget {
     private final SpeedrunOption<Integer> option;
 
     public TimeSliderWidget(int x, int y, int width, int height, SpeedrunOption<Integer> option) {
-        super(x, y, width, height, (double) option.get() / (5 * 60));
+        super(x, y, width, height, "", (double) option.get() / (5 * 60));
         this.option = option;
         this.updateMessage();
     }

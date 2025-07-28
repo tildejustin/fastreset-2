@@ -14,7 +14,7 @@ import java.util.function.Supplier;
 public abstract class ThreadedAnvilChunkStorageMixin {
 
     @Redirect(
-            method = "method_20619",
+            method = "loadChunk",
             at = @At(
                     value = "INVOKE",
                     target = "Ljava/util/concurrent/CompletableFuture;supplyAsync(Ljava/util/function/Supplier;Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;"
